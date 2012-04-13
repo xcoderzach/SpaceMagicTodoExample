@@ -19,7 +19,6 @@ var ListView = require("views/list_view")
     this.model.save()
   })
  
-
 module.exports = ListView.define("TaskListView")                                            
   .template("/templates/tasks/list.html") 
   .subView("#newTaskForm", NewTaskView)
