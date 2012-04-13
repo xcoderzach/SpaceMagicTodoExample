@@ -1,7 +1,8 @@
 var ListView = require("views/list_view") 
+  , SingleView = require("views/single_view")
   , NewTaskView = require("./new")
 
-  , TaskView = ListView.define("TaskView")                                            
+  , TaskView = SingleView.define("TaskView")                                            
   .action("change input[type=checkbox]", function(event, element) {
     var done = element.is(":checked")
     this.model.set({ done: done })
