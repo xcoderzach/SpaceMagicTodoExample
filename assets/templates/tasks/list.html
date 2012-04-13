@@ -1,15 +1,21 @@
 <section>
   <ul class = "tasks">
-    <li class = "task">
-      <input type = "checkbox" class = "done">
-      <div class = "title"></div>
-      <div class = "votes">0</div>
-      <div class = "upVote">U</div>
-      <div class = "downVote">D</div>
+    <li class = "task row">
+      <div class="votingArea">
+        <i class = "upVote icon-arrow-up"></i>
+        <div class = "votes">0</div>
+        <i class = "icon-arrow-down downVote"></i>
+      </div>
+      <div class="span4">
+        <div class = "title"></div>
+      </div>
+      <div class="span1">
+        <input type = "checkbox" class = "done">
+      </div>
     </li>
   </ul>
   <form id = "newTaskForm">
     <input type = "text" name = "task[title]" />
-    <input type = "submit" />
+    <input type = "submit" value="Add Task"/>
   </form>
 </section> 
