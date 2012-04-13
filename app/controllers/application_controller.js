@@ -5,7 +5,7 @@ var TaskListView = require("../views/tasks/list")
 Controller("/", function(app) {
   app.get(function() {
     var tasks = Task.find()
-    tasks.sortBy("votes")
+    tasks.sortBy("votes", true)
     this.view = new TaskListView(tasks)
   }) 
 })
