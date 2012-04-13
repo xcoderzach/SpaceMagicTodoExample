@@ -7,6 +7,7 @@ module.exports = View.define("NewTaskView")
     var input = element.find("input[type=text]")
     var title = input.val()
     input.val("")
+    console.log(title, title.length)
 
     Task.create({ title: title, votes: 0, done: false })
 
